@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 {
     byte msg[4];
 
-    *(unsigned int*)msg = 0xdeadbeef;
+    *(word*)msg = 0xdeadbeef;
 
     sha256* hash = SHA256(msg, sizeof(msg));
 
